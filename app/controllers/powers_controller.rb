@@ -13,7 +13,7 @@ class PowersController < ApplicationController
 
     def update
         power = Power.find(params[:id])
-        power.update(power_params)
+        power.update!(power_params)
 
         render json: power, status: :ok
     end

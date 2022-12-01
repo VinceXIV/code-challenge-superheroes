@@ -7,7 +7,8 @@ class HeroPowersController < ApplicationController
     end
 
     def create
-        render json: HeroPower.create!(hero_power_params), status: :created
+        hero_power = HeroPower.create!(hero_power_params)
+        render json: hero_power.hero, status: :created, serializer: HeroAndTheirPowersSerializer
     end
 
     private

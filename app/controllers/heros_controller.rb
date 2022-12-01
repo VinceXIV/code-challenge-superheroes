@@ -7,7 +7,7 @@ class HerosController < ApplicationController
 
     def show
         hero = Hero.find(params[:id])
-        render json: hero, status: :ok
+        render json: hero, status: :ok, serializer: HeroAndTheirPowersSerializer
     end
 
     private
