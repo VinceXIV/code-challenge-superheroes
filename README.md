@@ -146,10 +146,27 @@ I used WSL ubuntu to create this project. It should also work on Ubuntu 20.04 as
 
 
 ## Configuration
-To use this api you will need to follow the following steps;
-1. Clone it using the command `git clone https://github.com/VinceXIV/code-challenge-superheroes`. You can also fork it and clone it from your account if you find it suitable that way
-2. `cd` into the directory created after cloning then run `bundle install`. This will download all the projects dependencies (gemfiles), which will enable you to run the project
-3. Run `rails db:migrate db:seed`. This will create and initialize the table with the seeds (sample data) that you can use to test the api
-4. Run the command; `rails server` or `rails s` if you feel too tired to type "server" in full. This will get the server running in the local host, port 3000 (by default), enabling you to consume from the three endpoints whose routes have been worked on. These include **GET /heroes** **GET /heroes/:id**, etc. You can find these routes in the _routes.rb_ file that is available inside the db/ folder.
-5. Consume the API. That's it. You have successfully set up the project. At this point, you have various options. You can use the browser search tab but with that you are limited to doing the get requests only. A better option is setting up Postman so you can test other controller action such as sending post request
+To use this api you will need to run the following commands;
+- `git clone https://github.com/VinceXIV/code-challenge-superheroes`
+- `cd code-challenge-superheroes`
+- `bundle install`
+- `rails db:migrate db:seed`
+- `rails server` or `rails s` if you feel to tired to type *server*
+
+At this point, you will have the server running on that terminal, which means you can consume the API in the browser or your code. By default, it will be running on port 3000. You will be able to consume the endpoints discussed above; *GET /heroes*, *GET /heroes/:id*, etc.
+
+## Known bugs
+So far so good. No bugs have been identified
+
+## Support and Contact Details
+You can make contributions to the code or offer suggestions by reaching out me (the author of this work) through email. Here's my email; makokhavomondi@gmail.com
+
+## License
+Copyright (c) 2022 Vincent Omondi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files , to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
